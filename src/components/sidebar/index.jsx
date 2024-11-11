@@ -44,11 +44,18 @@ const Sidebar = ({ sidebarOpen }) => {
       <div className="p-5 pl-8 max-h-screen overflow-y-auto no-scrollbar">
         <div className="flex grow flex-col gap-y-5">
           <div className="flex h-16 shrink-0 items-center mb-10">
-            <img
-              alt="Your Company"
-              src="https://react-demo.tailadmin.com/assets/logo-162ee3ec.svg"
-              className="h-8 w-auto"
-            />
+            {isDarkMode ? (
+              <img
+                alt="Your Company"
+                src="https://react-demo.tailadmin.com/assets/logo-162ee3ec.svg"
+                className="h-8 w-auto"
+              />
+            ) : (
+              <img
+                src="https://tailadmin.com/images/logo/logo-light.svg"
+                alt="logo"
+              />
+            )}
           </div>
           <nav className="flex flex-1 flex-col">
             <ul
