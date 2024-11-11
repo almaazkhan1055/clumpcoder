@@ -1,13 +1,9 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import {
-  ArchiveBoxIcon,
-  ArrowRightCircleIcon,
   ChevronDownIcon,
   DocumentDuplicateIcon,
-  HeartIcon,
   PencilSquareIcon,
   TrashIcon,
-  UserPlusIcon,
 } from "@heroicons/react/20/solid";
 
 const DropDown = ({ text }) => {
